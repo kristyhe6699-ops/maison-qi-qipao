@@ -1,0 +1,6 @@
+{
+  "name": "祺坊旗袍高级定制平台",
+  "description": "东方美学高级祺袍展示与量身在线定制电子商务平台，完美融合传统苏绣、非遗香云纱与 Madame Qi AI 专属搭配主设咨询。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
