@@ -1,13 +1,13 @@
 import { Product } from './types';
 
-// Let's resolve the actual generated image URLs
+// Import images so Vite can resolve them in production builds
+import heroImg from './assets/images/qipao_hero_banner_1782488815540.jpg';
+import embroideryImg from './assets/images/qipao_lookbook_1_1782488835886.jpg';
+import modelGreenImg from './assets/images/qipao_lookbook_2_1782488850431.jpg';
+import collarDetailImg from './assets/images/qipao_lookbook_3_1782488865594.jpg';
+import atelierImg from './assets/images/qipao_tailor_atelier_1782488883669.jpg';
+
 export const IMAGES = {
-  hero: '/src/assets/images/qipao_hero_banner_1782488815540.jpg',
-  embroidery: '/src/assets/images/qipao_lookbook_1_1782488835886.jpg',
-  modelGreen: '/src/assets/images/qipao_lookbook_2_1782488850431.jpg',
-  collarDetail: '/src/assets/images/qipao_lookbook_3_1782488865594.jpg',
-  atelier: '/src/assets/images/qipao_tailor_atelier_1782488883669.jpg',
-};
 
 export const PRODUCTS: Product[] = [
   {
