@@ -1,13 +1,12 @@
 import { Product } from './types';
 
-// Import images so Vite can resolve them in production builds
-import heroImg from './assets/images/qipao_hero_banner_1782488815540.jpg';
-import embroideryImg from './assets/images/qipao_lookbook_1_1782488835886.jpg';
-import modelGreenImg from './assets/images/qipao_lookbook_2_1782488850431.jpg';
-import collarDetailImg from './assets/images/qipao_lookbook_3_1782488865594.jpg';
-import atelierImg from './assets/images/qipao_tailor_atelier_1782488883669.jpg';
-
 export const IMAGES = {
+  hero: '/images/qipao_hero_banner_1782488815540.jpg',
+  embroidery: '/images/qipao_lookbook_1_1782488835886.jpg',
+  modelGreen: '/images/qipao_lookbook_2_1782488850431.jpg',
+  collarDetail: '/images/qipao_lookbook_3_1782488865594.jpg',
+  atelier: '/images/qipao_tailor_atelier_1782488883669.jpg',
+};
 
 export const PRODUCTS: Product[] = [
   {
@@ -93,26 +92,52 @@ export const COLLAR_OPTIONS = [
 export const SLEEVE_OPTIONS = [
   { id: 'cap', name: '飞飞袖', desc: '微型飞袖，遮住大臂最粗处，显瘦利落', price: 100, tag: 'Cap Sleeve' },
   { id: 'elbow', name: '玉兰中袖', desc: '及肘中袖，线条流畅温婉，极其端庄显沉静', price: 150, tag: 'Elbow Length' },
-  { id: 'long', name: '连肩长袖', desc: '肩袖一体，随身落落大方，显温婉与古典风韵', price: 250, tag: 'Kimono Long' },
-  { id: 'none', name: '无袖', desc: '干练洒脱，适合匀称修长的手臂，夏季首选', price: 0, tag: 'Sleeveless' }
+  { id: 'long', name: '长袖', desc: '传统长袖设计，端庄大方，秋冬保暖之选', price: 0, tag: 'Full Length' }
 ];
 
 export const FABRIC_OPTIONS = [
-  { id: 'mulberry_silk', name: '苏州特级桑蚕丝', desc: '温润莹亮，如玉如波，经典顺滑的穿着体验', price: 1200, tag: 'Suzhou Mulberry Silk', color: 'bg-[#faf6f0] border-stone-300' },
-  { id: 'xiangyunsha', name: '老莨非遗香云纱', desc: '黑如漆、沉如泥，岁月沉淀的植物矿物非遗，苍凉华丽', price: 1800, tag: 'Heritage Xiangyunsha', color: 'bg-[#292524] border-stone-800' },
-  { id: 'heavy_crepe', name: '真丝双绉提花', desc: '哑光骨感，丰满不易皱，垂坠感极强，藏肉显瘦', price: 900, tag: 'Jacquard Heavy Crepe', color: 'bg-[#e2dcd5] border-stone-400' },
-  { id: 'brocade', name: '金银双股织锦缎', desc: '流光溢彩，丝缕中织入金银丝线，华丽重工，触手有痕', price: 1500, tag: 'Luxe Brocade Satin', color: 'bg-[#d97706] border-amber-700' }
-];
-
-export const PANKOU_OPTIONS = [
-  { id: 'straight', name: '一字扣', desc: '宋风极简一字扣，留白雅致，素洁纯真', price: 0, tag: 'Straight Pankou' },
-  { id: 'pipa', name: '琵琶扣', desc: '经典琵琶圆盘，玲珑富丽，带有生动的国风意趣', price: 100, tag: 'Pipa Pankou' },
-  { id: 'floral', name: '繁花手工扣', desc: '经验师傅手工绞盘的花朵，精美重工，绝美点缀', price: 250, tag: 'Floral Pankou' }
+  { id: 'silk', name: '桑蚕丝', desc: '顶级桑蚕丝，丝滑亲肤，天然光泽，四季皆宜', price: 0, tag: 'Mulberry Silk' },
+  { id: 'crepe', name: '重磅真丝绉', desc: '重磅真丝绉面料，有垂坠感，显瘦利落，有质感', price: 300, tag: 'Heavy Silk Crepe' },
+  { id: 'xiangyun', name: '香云纱', desc: '非遗手作晒莨香云纱，越穿越润，独一无二的复古光泽', price: 800, tag: 'Xiangyunsha Silk' }
 ];
 
 export const EMBROIDERY_OPTIONS = [
-  { id: 'magnolia', name: '玉兰幽香', desc: '苏绣手工劈线，玉兰盛放，高洁清香，栩栩如生', price: 1500, tag: 'Magnolia handcraft' },
-  { id: 'plum', name: '傲骨寒梅', desc: '疏影横斜，点点红梅染就一树寒霜傲雪', price: 1600, tag: 'Plum Blossom' },
-  { id: 'bamboo', name: '水墨竹影', desc: '清雅墨竹，竹节凌云，体现书香门第、君子之气', price: 1200, tag: 'Ink Bamboo' },
-  { id: 'none', name: '素雅无暇', desc: '纯色留白，完美保留面料原本的织造纹理，大美无言', price: 0, tag: 'Plain Minimal' }
+  { id: 'none', name: '无刺绣', desc: '纯净无饰，极简之美，面料本身的质感就是最好的装饰', price: 0, tag: 'No Embroidery' },
+  { id: 'su', name: '苏绣白玉兰', desc: '苏州非遗手绣白玉兰，清雅脱俗，每一朵都是独一无二的', price: 1200, tag: 'Suzhou White Magnolia' },
+  { id: 'yun', name: '云锦金线凤凰', desc: '南京非遗云锦，金线凤凰图腾，富丽堂皇，仅婚宴礼服可用', price: 3500, tag: 'Yunjin Golden Phoenix' }
+];
+
+export const BUTTON_OPTIONS = [
+  { id: 'standard', name: '一字盘扣', desc: '经典一字盘扣，简洁大方，上海祺袍标志设计', price: 0, tag: 'Standard Knot' },
+  { id: 'pipa', name: '琵琶扣', desc: '复古琵琶扣饰，古典趣味，如琵琶弦上流动的韵律', price: 200, tag: 'Pipa Knot' },
+  { id: 'copper', name: '古董铜扣', desc: '精铸古董铜扣，民国时期风格，低调的贵气', price: 350, tag: 'Antique Copper' }
+];
+
+export const SIZE_OPTIONS = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
+
+export const COLOR_OPTIONS = [
+  { name: '墨绿', hex: '#2D4A3E' },
+  { name: '黛蓝', hex: '#1E3A5F' },
+  { name: '绛红', hex: '#8B2252' },
+  { name: '月白', hex: '#F0F0E8' },
+  { name: '藏青', hex: '#1A2744' }
+];
+
+export const FAQ_ITEMS = [
+  {
+    question: '定制周期需要多长时间？',
+    answer: '基础款通常需要 15-20 个工作日。如果选择了手工刺绣（苏绣/云锦），则需要 30-45 个工作日。我们会在确认订单后提供精确的交付日期。'
+  },
+  {
+    question: '如何测量我的尺寸？',
+    answer: '我们提供详细的测量指南和视频教程。您也可以预约到店量身服务（上海/北京/苏州），我们的专业裁缝会为您精准测量 20+ 个身体数据点。'
+  },
+  {
+    question: '可以修改已有的设计吗？',
+    answer: '当然可以！我们的定制系统支持多种领型、袖型、面料和刺绣组合。如果您有特殊的设计想法，也可以通过 AI 款式顾问与我们沟通，我们会尽力满足您的需求。'
+  },
+  {
+    question: '价格包含哪些内容？',
+    answer: '价格包含面料、裁剪、缝制、基础配件（盘扣等）和包装。手工刺绣、特殊面料加价和到店量身服务需要额外收费，具体价格请参考定制系统的报价。'
+  }
 ];
