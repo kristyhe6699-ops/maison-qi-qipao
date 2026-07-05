@@ -107,10 +107,10 @@ export const EMBROIDERY_OPTIONS = [
   { id: 'yun', name: '云锦金线凤凰', desc: '南京非遗云锦，金线凤凰图腾，富丽堂皇，仅婚宴礼服可用', price: 3500, tag: 'Yunjin Golden Phoenix' }
 ];
 
-export const BUTTON_OPTIONS = [
-  { id: 'standard', name: '一字盘扣', desc: '经典一字盘扣，简洁大方，上海祺袍标志设计', price: 0, tag: 'Standard Knot' },
+export const PANKOU_OPTIONS = [
+  { id: 'straight', name: '一字盘扣', desc: '经典一字盘扣，简洁大方，上海祺袍标志设计', price: 0, tag: 'Standard Knot' },
   { id: 'pipa', name: '琵琶扣', desc: '复古琵琶扣饰，古典趣味，如琵琶弦上流动的韵律', price: 200, tag: 'Pipa Knot' },
-  { id: 'copper', name: '古董铜扣', desc: '精铸古董铜扣，民国时期风格，低调的贵气', price: 350, tag: 'Antique Copper' }
+  { id: 'floral', name: '凤尾盘扣', desc: '精铸古董铜扣，民国时期风格，低调的贵气', price: 350, tag: 'Antique Copper' }
 ];
 
 export const SIZE_OPTIONS = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
