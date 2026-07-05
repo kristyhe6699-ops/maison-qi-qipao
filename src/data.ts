@@ -92,19 +92,20 @@ export const COLLAR_OPTIONS = [
 export const SLEEVE_OPTIONS = [
   { id: 'cap', name: '飞飞袖', desc: '微型飞袖，遮住大臂最粗处，显瘦利落', price: 100, tag: 'Cap Sleeve' },
   { id: 'elbow', name: '玉兰中袖', desc: '及肘中袖，线条流畅温婉，极其端庄显沉静', price: 150, tag: 'Elbow Length' },
-  { id: 'long', name: '长袖', desc: '传统长袖设计，端庄大方，秋冬保暖之选', price: 0, tag: 'Full Length' }
+  { id: 'long', name: '长袖', desc: '传统长袖设计，端庄大方，秋冬保暖之选', price: 0, tag: 'Full Length' },
+  { id: 'none', name: '无袖', desc: '无袖设计，清爽利落，展现优美肩部线条', price: 0, tag: 'Sleeveless' }
 ];
 
 export const FABRIC_OPTIONS = [
-  { id: 'silk', name: '桑蚕丝', desc: '顶级桑蚕丝，丝滑亲肤，天然光泽，四季皆宜', price: 0, tag: 'Mulberry Silk' },
-  { id: 'crepe', name: '重磅真丝绉', desc: '重磅真丝绉面料，有垂坠感，显瘦利落，有质感', price: 300, tag: 'Heavy Silk Crepe' },
-  { id: 'xiangyun', name: '香云纱', desc: '非遗手作晒莨香云纱，越穿越润，独一无二的复古光泽', price: 800, tag: 'Xiangyunsha Silk' }
+  { id: 'mulberry_silk', name: '桑蚕丝', desc: '顶级桑蚕丝，丝滑亲肤，天然光泽，四季皆宜', price: 0, tag: 'Mulberry Silk' },
+  { id: 'heavy_crepe', name: '重磅真丝绉', desc: '重磅真丝绉面料，有垂坠感，显瘦利落，有质感', price: 300, tag: 'Heavy Silk Crepe' },
+  { id: 'xiangyunsha', name: '香云纱', desc: '非遗手作晒莨香云纱，越穿越润，独一无二的复古光泽', price: 800, tag: 'Xiangyunsha Silk' }
 ];
 
 export const EMBROIDERY_OPTIONS = [
   { id: 'none', name: '无刺绣', desc: '纯净无饰，极简之美，面料本身的质感就是最好的装饰', price: 0, tag: 'No Embroidery' },
-  { id: 'su', name: '苏绣白玉兰', desc: '苏州非遗手绣白玉兰，清雅脱俗，每一朵都是独一无二的', price: 1200, tag: 'Suzhou White Magnolia' },
-  { id: 'yun', name: '云锦金线凤凰', desc: '南京非遗云锦，金线凤凰图腾，富丽堂皇，仅婚宴礼服可用', price: 3500, tag: 'Yunjin Golden Phoenix' }
+  { id: 'magnolia', name: '苏绣白玉兰', desc: '苏州非遗手绣白玉兰，清雅脱俗，每一朵都是独一无二的', price: 1200, tag: 'Suzhou White Magnolia' },
+  { id: 'bamboo', name: '云锦金线凤凰', desc: '南京非遗云锦，金线凤凰图腾，富丽堂皇，仅婚宴礼服可用', price: 3500, tag: 'Yunjin Golden Phoenix' }
 ];
 
 export const PANKOU_OPTIONS = [
